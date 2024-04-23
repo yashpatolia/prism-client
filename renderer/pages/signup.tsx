@@ -3,11 +3,11 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 
-export default function HomePage() {
+export default function SignupPage() {
   return (
     <React.Fragment>
       <Head>
-        <title>Prism</title>
+        <title>Prism - Signup</title>
       </Head>
       <div className="grid grid-col-1 text-2xl w-full text-center">
         <div>
@@ -19,13 +19,10 @@ export default function HomePage() {
             height={256}
           />
         </div>
-        <span>⚡ Prism ⚡</span>
+        <span>⚡ Signup ⚡</span>
       </div>
       <div className="mt-1 w-full flex-wrap flex justify-center">
-        <Link href="/signup">Signup</Link>
-      </div>
-      <div className="mt-1 w-full flex-wrap flex justify-center">
-        <Link href="/login">Login</Link>
+        <Link href="/home">Go Home</Link>
       </div>
     </React.Fragment>
   )

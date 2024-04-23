@@ -3,11 +3,11 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 
-export default function NextPage() {
+export default function LoginPage() {
   return (
     <React.Fragment>
       <Head>
-        <title>Next - Nextron (with-tailwindcss)</title>
+        <title>Prism - Login</title>
       </Head>
       <div className="grid grid-col-1 text-2xl w-full text-center">
         <div>
@@ -19,10 +19,10 @@ export default function NextPage() {
             height={256}
           />
         </div>
-        <span>⚡ Nextron ⚡</span>
+        <span>⚡ Login ⚡</span>
       </div>
       <div className="mt-1 w-full flex-wrap flex justify-center">
-        <Link href="/home">Go to home page</Link>
+        <Link href="/home">Go Home</Link>
       </div>
     </React.Fragment>
   )
