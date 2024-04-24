@@ -24,10 +24,12 @@ if (isProd) {
 
   if (isProd) {
     await mainWindow.loadURL('app://./home')
+    mainWindow.setMenuBarVisibility(false)
   } else {
     const port = process.argv[2]
+    mainWindow.setMenuBarVisibility(false)
     await mainWindow.loadURL(`http://localhost:${port}/home`)
-    mainWindow.webContents.openDevTools()
+    // mainWindow.webContents.openDevTools()
   }
 })()
 

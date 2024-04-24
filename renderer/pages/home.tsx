@@ -21,11 +21,16 @@ export default function HomePage() {
         </div>
         <span>⚡ Prism ⚡</span>
       </div>
-      <div className="mt-1 w-full flex-wrap flex justify-center">
-        <Link href="/signup">Signup</Link>
+      <div className="gap-2 mt-1 w-full flex-wrap flex justify-center">
+        <label>Username</label>
+        <input type='text' id='username' className='text-gray-950'/>
+      </div>
+      <div className="gap-2 mt-1 w-full flex-wrap flex justify-center">
+        <label>Password</label>
+        <input type='password' id='password' className='text-gray-950'/>
       </div>
       <div className="mt-1 w-full flex-wrap flex justify-center">
-        <Link href="/login">Login</Link>
+        <Link href='/signup'>Register</Link>
       </div>
     </React.Fragment>
   )
